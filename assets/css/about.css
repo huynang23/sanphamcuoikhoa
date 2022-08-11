@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+:root{
+    --clr-neutral-900:hsl(207 19% 9%);
+    --clr-neutral-100:hsl(0 0% 100%);
+    --clr-accent-400:hsl(142 90% 61%);
+    --primary-color: #d63031;
+    --orange: #292828;
+    --secondary-color: #636e72;
+    --font: 'Poppins', sans-serif;
+}
+.text-while{
+    color: #fff !important;
+}
+#main{
+
+
+}
+/* ----Navbar--- */
+.btn{
+	padding: .6rem .8rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--primary-color);
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid var(--primary-color);
+	transition: .3s;
+	cursor: pointer;
+}
+.btn:hover{
+	background: transparent;
+}
+body{
+	background: black;
+	font-family: var(--font);
+}
+
+nav{
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background: var(--primary-color);
+    cursor: pointer;
+}
+
+.logo::before{
+	content: "GYM";
+	color: white;
+}
+.logo::after{
+	content: "X";
+	color: black;
+}
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	color: var(--primary-color);
+}
+
+/* ---EndNavbar--- */
+
+
+/* about */
+
+
+.about-container{ 
+    background-image: url(/assets/img/about/1565318044.jpg);
+    height: 600px;
+    padding-top: 46px;
+    background-size: 120%;
+    color: #fff;
+}
+
+.content-title{ 
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+
+.inspire{
+    width: 100%;
+    height: 150px;
+    margin: 20px auto;
+}
+
+table.about-table{
+    width: 90%;
+    height: 400px;
+    margin-left: 90px;
+}
+
+.table-spacer{
+    height: 40px;
+}
+
+td.banner-table{
+    width: 50%;
+    padding: 0px 20px;
+}
+
+.title-about{
+    margin:20px auto;
+}
+
+.about-table-image img{
+    width: 120px;
+    
+}
+
+h2.title-about{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    font-style: italic;
+}
+
+p.inspire-about {
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+/* main - about */
+
+.main-wrap{
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 900px;
+}
+
+.introduce-container{
+    padding: 60px 40px;
+}
+
+.main-table-big{
+    width: 100%;
+    height: 700px;
+}
+
+.main-table{
+    position: relative;
+    height: 100%;
+} 
+
+.content-col-image{
+    width: 300px;
+}
+
+td.content-table-image{
+    padding: 0px 10px;
+    width: 30%;
+    vertical-align: top;
+}
+
+.content-col-image img{
+    width: auto;
+    max-width: 100%;
+}
+
+td.content-table-main{
+    padding: 0px 70px;
+    border: 5px solid white;
+    width: 70%;
+    vertical-align: top;
+}
+
+td.content-table-main h2{
+    font-family:"Oswald";
+    font-style: italic;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.title-paragrap{
+    width: auto;
+    height: 150px;
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+
+.content-main{
+    font-size: 18px;
+}
+
+
+
+/* --------FOOTER------- */
+#footer{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 200px;
+    padding-top: 40px;
+    place-items: center;
+}
+.logo-footer::before{
+	content: "GYM";
+	color: rgb(255, 255, 255);
+}
+.logo-footer::after{
+	content:"X";
+	color: rgb(0, 0, 0);
+}
+
+.footer-content{
+    margin-left: 1.5rem;
+}
+.footer-content>h2{
+    color: white;
+}
+.fa-solid{
+    color: white;
+}
+.location{
+    color: white;
+}
+ .social-btn .icon{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    float: right;
+    overflow: hidden;
+    margin: 0 5px;
+    background: rgb(250, 250, 250);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition:all 0.3s ease-out ;
+
+    
+}
+.social-btn .icon span{
+display: none;
+}
+
+.social-btn .icon:hover {
+    width: 150px;
+}
+.social-btn .icon:hover .social-btn .icon span{
+   display: block;
+}
+.social-btn .icon .icon-social{
+    
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition:all 0.3s ease-out ;
+}
+.social-btn .icon:nth-child(5):hover .icon-social{
+    background: #4267B2;
+}
+.social-btn .icon:nth-child(4):hover .icon-social{
+    background: #1DA1F2;
+}
+.social-btn .icon:nth-child(3):hover .icon-social{
+    background: #E1306C;
+}
+.social-btn .icon:nth-child(2):hover .icon-social{
+    background: #333;
+}
+.social-btn .icon:nth-child(1):hover .icon-social{
+    background: #FF0000;
+}
+
+
+.social-btn .icon .icon-social .i{
+    font-size: 25px;
+    line-height: 60px;
+    transition:all 0.3s ease-out ;
+}
+.social-btn .icon:hover .icon-social .i{
+    color:#fff ;
+}
+.social-btn .icon .span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition:all 0.3s ease-out ;
+}
+
+

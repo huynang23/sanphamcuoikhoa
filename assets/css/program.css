@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+}
+body{
+    background: #111222;
+  }
+
+.clear{
+    clear: both;
+}
+:root{
+    --clr-neutral-900:hsl(207 19% 9%);
+    --clr-neutral-100:hsl(0 0% 100%);
+    --clr-accent-400:hsl(142 90% 61%);
+    --primary-color: #d63031;
+    --orange: #292828;
+    --secondary-color: #636e72;
+    --font: 'Poppins', sans-serif;
+}
+.text-while{
+    color: #fff !important;
+}
+
+.btn{
+	padding: .6rem .8rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--primary-color);
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid var(--primary-color);
+	transition: .3s;
+	cursor: pointer;
+}
+.btn:hover{
+	background: transparent;
+}
+body{
+	background: black;
+	font-family: var(--font);
+}
+
+nav{
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background: var(--primary-color);
+    cursor: pointer;
+}
+
+.logo::before{
+	content: "GYM";
+	color: white;
+}
+.logo::after{
+	content: "X";
+	color: black;
+}
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	color: var(--primary-color);
+}
+/* -----Endnavbar--- */
+
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+  }
+  
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .main-title{
+    font-size: 4em;
+    margin-bottom: 50px;
+  }
+  
+  .content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .content .text-box{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+    cursor: pointer;
+  }
+  
+  .content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .media-icons{
+    margin-top: 100px;
+  }
+  
+  .media-icons a{
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+  }
+  
+  .section-title{
+    font-size: 3em;
+    margin-bottom: 80px;
+  }
+  
+  .info-title{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .info{
+    width: 700px;
+    margin-left: 50px;
+  }
+  
+  .media-info{
+    width: 400px;
+    margin-left: 50px;
+  }
+  
+  .media-info li{
+    list-style: none;
+    font-size: 1.4em;
+  }
+  
+  .media-info li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .media-info li:not(:last-child){
+    margin-bottom: 50px;
+  }
+  
+  .media-info li:nth-child(1), .media-info li:nth-child(5){
+    padding-left: 100px;
+  }
+  
+  .media-info li:nth-child(2), .media-info li:nth-child(4){
+    padding-left: 50px;
+  }
+  
+  .sec-03{
+    margin-bottom: 100px;
+  }
+
+/* ------FOOTER-----  */
+#footer{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 200px;
+    padding-top: 40px;
+    place-items: center;
+}
+.logo-footer::before{
+	content: "GYM";
+	color: rgb(255, 255, 255);
+}
+.logo-footer::after{
+	content:"X";
+	color: rgb(0, 0, 0);
+}
+
+.footer-content{
+    margin-left: 1.5rem;
+}
+.footer-content>h2{
+    color: white;
+}
+.fa-solid{
+    color: white;
+}
+.location{
+    color: white;
+}
+ .social-btn .icon{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    float: right;
+    overflow: hidden;
+    margin: 0 5px;
+    background: rgb(250, 250, 250);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition:all 0.3s ease-out ;
+
+    
+}
+.social-btn .icon span{
+display: none;
+}
+
+.social-btn .icon:hover {
+    width: 150px;
+}
+.social-btn .icon:hover .social-btn .icon span{
+   display: block;
+}
+.social-btn .icon .icon-social{
+    
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition:all 0.3s ease-out ;
+}
+.social-btn .icon:nth-child(5):hover .icon-social{
+    background: #4267B2;
+}
+.social-btn .icon:nth-child(4):hover .icon-social{
+    background: #1DA1F2;
+}
+.social-btn .icon:nth-child(3):hover .icon-social{
+    background: #E1306C;
+}
+.social-btn .icon:nth-child(2):hover .icon-social{
+    background: #333;
+}
+.social-btn .icon:nth-child(1):hover .icon-social{
+    background: #FF0000;
+}
+
+
+.social-btn .icon .icon-social .i{
+    font-size: 25px;
+    line-height: 60px;
+    transition:all 0.3s ease-out ;
+}
+.social-btn .icon:hover .icon-social .i{
+    color:#fff ;
+}
+.social-btn .icon .span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition:all 0.3s ease-out ;
+}
+
+

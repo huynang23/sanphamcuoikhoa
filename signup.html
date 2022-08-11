@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/signup.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+</head>
+<body>
+  <div id="main">
+     
+      <header>
+          <nav>
+              <h2 class="logo"></h2>
+              <ul>
+                  <a href="/index.html"><li>Home</li></a>
+                  <a href="/program.html"><li>Program</li></a>
+                  <a href="./about.html"><li>About</li></a>
+                  <a href="/contact.html"><li>Contact</li></a>
+                  <a href="./login.html"><li>Login</li></a>
+
+              </ul>
+          </nav>
+         
+      </header>
+      <div class="content">
+
+        <div class="wapper">
+            <div class="wapper-heading">
+              <h1>Sign Up</h1>
+            </div>
+            <form onsubmit="signup()">
+              <div class="input__field">
+                <input id="username" type="text" placeholder="User Name" />
+              </div>
+      
+              <div class="input__field">
+                <input id="email" type="text" placeholder="Email" />
+              </div>
+              <div class="input__field">
+                <input id="password" type="password" placeholder="Password" />
+              </div>
+              <div class="input__field">
+                <input id="password" type="password" placeholder="Confirm Password" />
+              </div>
+              <a href="login.html" class="login-link">Login</a>
+              <button id="btnSignup" class="btn">Sign Up</button>
+            </form>
+          </div>
+          <script src="./js/login.js"></script>
+      </div>
+
+
+  <div id="footer">
+      
+      <div class="footer-content">
+          <h2 class="logo-footer"> </h2>
+      
+      <p class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          22C Thành Công, Ba Đình, Hà Nội
+      </p>
+     
+        </div>
+      <div class="social-btn">
+          <div class="icon">
+              <div class="icon-social"><i class="fa fa-youtube" id="youtube"></i></div>
+              <span>Youtube</span>
+          </div>
+
+
+
+          <div class="icon">
+              <div class="icon-social"><i class="fa fa-github" id="github"></i></div>
+              <span>Github</span>
+          </div>
+
+
+
+          <div class="icon">
+              <div class="icon-social"><i class="fa fa-instagram" id="instagram"></i></div>
+              <span>Instagram</span>
+          </div>
+
+
+
+
+          <div class="icon">
+              <div class="icon-social"><i class="fa fa-twitter" id="twitter"></i></div>
+              <span>Twitter</span>
+          </div>
+
+
+          <div class="icon">
+              <div class="icon-social"><i class="fa fa-facebook-square" id="facebook"></i></div>
+              <span>Facebook</span>
+          </div>
+      </div>
+
+
+
+
+  </div>
+</div>
+
+<!-- js icon -->
+<script>
+  let listIcon = document.querySelectorAll('div.icon');
+  let spanInIcon = document.querySelectorAll('div.icon span')
+  for (let i = 0; i < listIcon.length; i++) {
+      listIcon[i].addEventListener('mouseover', (e) => {
+          spanInIcon[i].style.display = 'block';
+      })
+      listIcon[i].addEventListener('mouseout', (e) => {
+          spanInIcon[i].style.display = 'none';
+      })
+  }
+</script>
+</body>
+
+
+</html>
+  

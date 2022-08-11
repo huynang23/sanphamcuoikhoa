@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="main">
+<!-- -----Header----- -->
+        <header>
+            <nav>
+                <h2 class="logo"></h2>
+                <ul>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./program.html"><li>Program</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a href="/contact.html"><li>Contact</li></a>
+                    <a href="./login.html"><li>Login</li></a>
+
+                </ul>
+            </nav>
+        </header>
+<!-- -----EndHeader---- -->
+
+<!-- content-about -->
+
+<section id="about">
+    <div class="banner-warp">
+        <div class="about-container">
+    <div class="content-title">
+        <div class="table-spacer"></div>
+    <table class="about-table">
+    <tr class="banner-table">
+    <td class="banner-table">
+    <h2 class="title-about">About</h2>
+    <div class="about-table-image">                       
+    <img src="./assets/img/about/ac8b55b81becdeb287fd.jpg">                            
+                            </div>
+                            <div class="inspire">
+                                <p class="inspire-about">I love to see clients ignite that little fire inside them. Hard work focused in
+                                    the right direction and commitment can help them succeed at anything they hand to.
+                                </p>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="table-spacer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-wrap">
+        <div class="introduce-container">
+             <div class="table-spacer"></div>    
+             <div class="main-table-big">
+                 <table class="main-table">
+                        <tr class="content-table">
+                            <td class="content-table-image">
+                                <div class="content-col-image">
+                                    <a>
+                                        <img src="./assets/img/about/pexels-photo-841130_1024x1024.jpg" alt="avatar" />
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="content-table-main">
+                                <div class="title-paragrap">
+                                    <h2 class="main-conten-title">
+                                        Meet allan young</h2><br />
+                                    <h2 class="main-conten-title">
+                                        Founder and personal trainer</h2>
+                                </div>
+                                <div class="content-main">
+                                    <span>
+                                        Allan young has helped hundreds of people achieve their fitness goals and he 
+                                        can help you too. You might have started to get into exercise because you were 
+                                        eager to find the confidence in your appearance and get in shape.
+                                        <br />
+                                        <br />
+                                    </span>
+                                    <span>
+                                        Allan had the same goal and his motivation led him to many achievements 
+                                        including becoming a 4 time Scottish champion in Olympic&nbsp;weightlifting.
+                                        <br />
+                                        <br />
+                                    </span>
+                                    <span>
+                                        With eight years of experience in personal training, Allan has worked hard to 
+                                        find the right strategy and deliver true results that you can count on. 
+                                        Whether you’re looking to lose weight, get stronger or build a lean and 
+                                        athletic look, he will be able to find the right plan for your needs. 
+                                        <br />
+                                        <br />
+                                    </span>
+                                    <span>
+                                        One of the main things that motivates Allan is meeting new people like you 
+                                        and discovering your stories. He wants to help you conquer your roadblocks 
+                                        and pursue your goals to the finish line.&nbsp;
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ---footer--- -->
+        <div id="footer">
+                
+            <div class="footer-content">
+                <h2 class="logo-footer"> </h2>
+            
+            <p class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                22C Thành Công, Ba Đình, Hà Nội
+            </p>
+           
+              </div>
+            <div class="social-btn">
+                <div class="icon">
+                    <div class="icon-social"><i class="fa fa-youtube" id="youtube"></i></div>
+                    <span>Youtube</span>
+                </div>
+
+
+
+                <div class="icon">
+                    <div class="icon-social"><i class="fa fa-github" id="github"></i></div>
+                    <span>Github</span>
+                </div>
+
+
+
+                <div class="icon">
+                    <div class="icon-social"><i class="fa fa-instagram" id="instagram"></i></div>
+                    <span>Instagram</span>
+                </div>
+
+
+
+
+                <div class="icon">
+                    <div class="icon-social"><i class="fa fa-twitter" id="twitter"></i></div>
+                    <span>Twitter</span>
+                </div>
+
+
+                <div class="icon">
+                    <div class="icon-social"><i class="fa fa-facebook-square" id="facebook"></i></div>
+                    <span>Facebook</span>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- -----EndFooter---- -->
+    </div>
+
+    <!-- js icon -->
+    <script>
+        let listIcon = document.querySelectorAll('div.icon');
+        let spanInIcon = document.querySelectorAll('div.icon span')
+        for (let i = 0; i < listIcon.length; i++) {
+            listIcon[i].addEventListener('mouseover', (e) => {
+                spanInIcon[i].style.display = 'block';
+            })
+            listIcon[i].addEventListener('mouseout', (e) => {
+                spanInIcon[i].style.display = 'none';
+            })
+        }
+    </script>
+
+
+    </div>
+</body>
+</html>
