@@ -84,6 +84,7 @@ ul a:hover{
 
 /* -----Endnavbar--- */
 .content {
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;

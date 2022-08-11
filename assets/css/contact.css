@@ -32,6 +32,7 @@ html{
 }
 
 nav{
+    background-color: #000;
     position: fixed;
 	width: 100vw;
 	height: 60px;
