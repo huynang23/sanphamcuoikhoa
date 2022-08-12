@@ -102,48 +102,6 @@ ul a:hover{
 	color: var(--primary-color);
 }
 
-/* .banner{
-	background: url(/assets/img/slider/banner.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 85vh;
-}
-
-.intro{
-	position: absolute;
-	top: 30%;
-	left: 10%;
-	color: white;
-}
-
-.intro h2,p{
-	display: block;
-	width: 75%;
-}
-
-.intro h2{
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 30px;
-}
-.btn-contact{
-	padding: .6rem .8rem;
-	text-transform: uppercase;
-	font-family: var(--font);
-	background: var(--primary-color);
-	color: white;
-	font-size: 16px;
-	text-decoration: none;
-	outline: none;
-	border: 2px solid var(--primary-color);
-	transition: .3s;
-	cursor: pointer;
-}
-.btn-contact:hover{
-	background: transparent;
-} */
 
 /* about slider-2 */
 .about .row{
